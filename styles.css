@@ -1,0 +1,227 @@
+/*to avoid default  margin surrounding whloe page!*/
+body {
+  margin: 0;
+  font-family: 'Lato';
+  background-color: #eee;
+  width: 100%;
+}
+.wrapper {
+  font-size: 15px;
+}
+/*Navbar style*/
+#header {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#nav-bar ul{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  list-style-type: none;
+}
+
+#nav-bar {
+  height: 22px;
+  font-size: 20px;
+  font-weight: lighter;
+
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+#header-img {
+  padding: 15px;
+  width: auto;
+  height: auto;
+}
+
+
+/*input-form style*/
+
+#form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 0.8em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#form #email {
+  width: 250px;
+}
+
+#form #submit {
+  background-color: rgb(253, 238, 26);
+  padding: 7px;
+  border-radius: 8%;
+  border-color:  rgb(253, 238, 26);
+  font-weight: bolder;
+}
+
+/*.info part style*/
+.article {
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.info {
+  padding: 30px 40px 40px 40px;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  justify-content: center;
+  align-items: center;
+  line-height: 0,2;
+}
+
+.info i {
+  color: orange;
+  font-size: 45px;
+}
+
+.info .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.info h1 {
+  padding: 0;
+  margin: 0;
+}
+.info p {
+  padding: 0;
+  margin: 0;
+}
+
+/*video style*/
+.video {
+  padding: 0px;
+}
+
+/* pricing style*/
+
+#pricing {
+  display: grid;
+  grid-template-columns: 22% 22% 22%;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.options {
+  border: 1px solid black;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#pricing #submit {
+  background-color: rgb(253, 238, 26);
+  border-color: rgb(253, 238, 26);
+  padding: 8px;
+  border-radius: 8%;
+  font-weight: lighter;
+
+}
+
+.price-heading {
+  font-size: 15px;
+  background-color: #d3d3d3;
+  padding: 15px 0px;
+}
+
+#pricing p {
+  line-height: 180%;
+}
+
+/*media*/
+
+@media (max-width: 600px) {
+  #pricing {
+    display: flex;
+    flex-direction: column;
+  }
+  .options {
+    width: 80%;
+    margin: 20px;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2,1fr);
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 0px;
+    height: 20vh;
+
+
+  }
+  
+  #nav-bar {
+    height: 0px;
+  }
+
+  #nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    width: 100vw;
+    padding-bottom: 5px;
+    background-color: #eee;
+
+  }
+  #header-img {
+    width:auto;
+    height:8vh;
+    padding: 7px;
+
+  }
+}
+
+/*footer*/
+footer {
+  background-color: #d3d3d3;
+  padding: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#footer-list {
+  display: grid;
+  justify-content: flex-end;
+  grid-template-columns: repeat(3, 80px);
+  list-style-type: none;
+  padding-right: 30px;
+}
+
+#footer-list a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer-text {
+  text-align: right;
+  padding-right: 50px;
+  font-size: 90%;
+}
